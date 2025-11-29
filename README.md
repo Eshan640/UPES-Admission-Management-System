@@ -95,12 +95,14 @@ This helped me understand how to build a small console-based system from scratch
 
 Some things I would like to add later:
 
-- Better UI (colors using ANSI codes)
-- Multiple quizzes per course
-- A login system (Admin / User)
-- Editing & deleting saved records
-- Exporting results to a CSV file
-- Converting console program into a full GUI
+. Better UI (colors using ANSI codes)
+• Online registration portal
+• Admin login system
+• CSV/Excel export
+• GUI-based interface
+• Online quiz integration
+• OTP verification
+• PDF admission letter
 
 ---
 
