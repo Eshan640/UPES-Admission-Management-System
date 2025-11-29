@@ -1,0 +1,213 @@
+UNIVERSITY OF PETROLEUM AND ENERGY STUDIES
+Course Code: CSEG1032
+UPES ADMISSION MANAGEMENT SYSTEM
+Major Project – C Programming
+
+Instructor: Dr. Tanu Singh
+Submitted By:
+Eshan Adlakha
+SAP ID: 590024733
+B.Tech – CSE
+
+
+-----------------------------------------
+ABSTRACT
+-----------------------------------------
+The UPES Admission Management System is a console-based C program that automates a simple admission workflow. 
+The system records student details such as name, mobile number, address, marks, selected school, and selected course.
+
+It verifies eligibility criteria, conducts a 10-question quiz for the chosen school, evaluates the score, and generates 
+an admission letter if the student passes.
+
+The project uses arrays, structures, functions, switch-case menus, and file handling to store successful admissions 
+in “students.txt”.
+
+This project can be extended with features like online registration, admin login, a GUI interface and real-time 
+result processing.
+
+
+-----------------------------------------
+PROBLEM DEFINITION
+-----------------------------------------
+Many institutions still handle admissions manually, leading to:
+
+• Human errors  
+• Missing records  
+• Difficulty verifying eligibility  
+• No automated testing  
+• Time-consuming workflow  
+
+A digital admission system is needed that can:
+
+✔ Store student details  
+✔ Check eligibility  
+✔ Allow course selection  
+✔ Conduct a quiz  
+✔ Evaluate pass/fail  
+✔ Save passed student records  
+✔ Display saved applicants  
+
+The objective is to create a simple, user-friendly admission management system using C.
+
+
+-----------------------------------------
+SCOPE OF PROJECT
+-----------------------------------------
+1. Covers basic admission workflow  
+2. Limited to console-based interface  
+3. Stores only essential student data  
+4. Useful for small institutions  
+5. Easily extendable  
+
+
+-----------------------------------------
+SYSTEM DESIGN
+-----------------------------------------
+Modules in the system:
+1. Welcome Screen  
+2. Main Menu  
+3. Student Data Input  
+4. Eligibility Checking  
+5. School & Course Selection  
+6. Quiz Module (10 questions)  
+7. Result Evaluation  
+8. File Saving Module  
+9. View Records Module  
+
+
+-----------------------------------------
+FLOWCHART (Summary)
+-----------------------------------------
+The flowchart shows the complete working of the system:
+- Program starts and displays the welcome screen  
+- User selects: New Admission / View Records / Exit  
+- For New Admission: details → validation → eligibility → course selection → quiz  
+- Based on score, pass or fail is decided  
+- Passed students are saved to "students.txt"  
+- Records can be viewed from the main menu  
+
+
+-----------------------------------------
+ALGORITHMS
+-----------------------------------------
+
+Algorithm 1: Main Menu
+1. Start  
+2. Display welcome screen  
+3. Loop until Exit  
+4. If choice = 1 → Admission Process  
+5. If choice = 2 → View Records  
+6. If choice = 3 → Exit  
+7. End  
+
+
+Algorithm 2: Admission Process
+1. Read student details  
+2. Validate mobile  
+3. Read class 10 & 12 marks  
+4. If marks < 70% → Not eligible  
+5. Display schools and courses  
+6. Select course  
+7. Start quiz  
+8. Count score  
+9. If score < 8 → Fail  
+10. Else → Pass and save  
+11. End  
+
+
+Algorithm 3: View Records
+1. Open “students.txt”  
+2. If empty → print “No records found”  
+3. Else read and display all saved students  
+4. End  
+
+
+Algorithm 4: Mobile Number Validation
+1. Read mobile string  
+2. If length ≠ 10 → invalid  
+3. Check all digits  
+4. If non-digit → invalid  
+5. Else valid  
+6. End  
+
+
+Algorithm 5: Quiz Module
+1. For each question: display Q, options  
+2. Read user answer  
+3. Validate input (A/B/C/D)  
+4. If correct → score++  
+5. After all questions return score  
+6. End  
+
+
+Algorithm 6: Main Loop With Error Handling
+1. Show fancy welcome & loading  
+2. Repeat menu  
+3. Parse input safely  
+4. Switch-case for 1/2/3  
+5. Continue until Exit  
+6. End  
+
+
+Algorithm 7: safe_get (Input Cleaning)
+1. Read using fgets  
+2. If NULL → buffer empty  
+3. Remove newline  
+4. Return cleaned string  
+5. End  
+
+
+-----------------------------------------
+CODE SNIPPETS (Summary)
+-----------------------------------------
+• Structure definitions (School, QuizQ)  
+• save_record_to_file() to append data into “students.txt”  
+• Quiz engine  
+• Main menu loop  
+
+
+-----------------------------------------
+TESTING & RESULT
+-----------------------------------------
+The screenshots (page 17–18) show:
+
+• Welcome screen  
+• New Admission input  
+• Eligibility confirmation  
+• Course selection  
+• Quiz  
+• Admission Letter generation  
+• Viewing stored records  
+
+System correctly handles input, stores passed students, and displays saved entries.  
+
+
+-----------------------------------------
+CONCLUSION & FUTURE WORK
+-----------------------------------------
+The project successfully implements a working admission management system using C.  
+It fulfills objectives of:
+
+• Collecting details  
+• Validating eligibility  
+• Conducting quiz  
+• Saving results  
+• Displaying stored records  
+
+Future enhancements:
+• Online registration  
+• Admin login  
+• CSV/Excel export  
+• GUI interface  
+• Online quiz  
+• OTP verification  
+• PDF admission letter generation  
+
+
+-----------------------------------------
+REFERENCES
+-----------------------------------------
+• Lecture Notes by Dr. Tanu Singh  
+• TutorialsPoint – C Programming  
+• Brian W. Kernighan & Dennis Ritchie – The C Programming Language  
+• W3Schools – C Basics  
