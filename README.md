@@ -59,12 +59,18 @@ Step 2: Run
 
 Below are a few snapshots showing the working of the system:
 
-- Welcome screen  <img width="319" height="121" alt="Screenshot 2025-11-29 at 7 15 00 PM" src="https://github.com/user-attachments/assets/f18c81ce-bee2-4a80-bcf3-0092a342ba80" />
-- Admission form input  <img width="220" height="178" alt="Screenshot 2025-11-29 at 7 15 44 PM" src="https://github.com/user-attachments/assets/7a37b3bd-a994-4790-bb89-8d1aef077492" />
-- Eligibility check  <img width="231" height="67" alt="Screenshot 2025-11-29 at 7 16 27 PM" src="https://github.com/user-attachments/assets/aafd5ae2-58bd-4206-b73e-f4b9b4d2b75a" />
-- Course selection    <img width="399" height="319" alt="Screenshot 2025-11-29 at 7 17 13 PM" src="https://github.com/user-attachments/assets/e4df1e2c-f8a0-4ebe-970d-b7054f20bb56" />
-- Final admission letter  <img width="427" height="191" alt="Screenshot 2025-11-29 at 7 18 06 PM" src="https://github.com/user-attachments/assets/fbfd257b-4629-4930-86f8-11ea2cf841a8" />
-- Saved records display  <img width="402" height="266" alt="Screenshot 2025-11-29 at 7 18 32 PM" src="https://github.com/user-attachments/assets/60d05980-e550-44a5-b4ce-38b4e839a585" />
+- Welcome screen
+-  <img width="319" height="121" alt="Screenshot 2025-11-29 at 7 15 00 PM" src="https://github.com/user-attachments/assets/f18c81ce-bee2-4a80-bcf3-0092a342ba80" />
+- Admission form input
+-   <img width="220" height="178" alt="Screenshot 2025-11-29 at 7 15 44 PM" src="https://github.com/user-attachments/assets/7a37b3bd-a994-4790-bb89-8d1aef077492" />
+- Eligibility check
+-  <img width="231" height="67" alt="Screenshot 2025-11-29 at 7 16 27 PM" src="https://github.com/user-attachments/assets/aafd5ae2-58bd-4206-b73e-f4b9b4d2b75a" />
+- Course selection
+-    <img width="399" height="319" alt="Screenshot 2025-11-29 at 7 17 13 PM" src="https://github.com/user-attachments/assets/e4df1e2c-f8a0-4ebe-970d-b7054f20bb56" />
+- Final admission letter
+-   <img width="427" height="191" alt="Screenshot 2025-11-29 at 7 18 06 PM" src="https://github.com/user-attachments/assets/fbfd257b-4629-4930-86f8-11ea2cf841a8" />
+- Saved records display
+-  <img width="402" height="266" alt="Screenshot 2025-11-29 at 7 18 32 PM" src="https://github.com/user-attachments/assets/60d05980-e550-44a5-b4ce-38b4e839a585" />
 
 ---
 
