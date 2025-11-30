@@ -26,7 +26,7 @@ char ask_choice_simple(const char *valid) {
             printf("Please enter a choice.\n");
             continue;
         }
-        char c = (char)toupper((unsigned char)line[0]);
+       char c = toupper((unsigned char)line[0]);
         if (strchr(valid, c)) return c;
         printf("Invalid choice. Try again.\n");
     }
