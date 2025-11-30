@@ -166,21 +166,6 @@ CODE SNIPPETS (Summary)
 • Main menu loop  
 
 
------------------------------------------
-TESTING & RESULT
------------------------------------------
-The screenshots (page 17–18) show:
-
-• Welcome screen  
-• New Admission input  
-• Eligibility confirmation  
-• Course selection  
-• Quiz  
-• Admission Letter generation  
-• Viewing stored records  
-
-System correctly handles input, stores passed students, and displays saved entries.  
-
 
 -----------------------------------------
 CONCLUSION & FUTURE WORK
