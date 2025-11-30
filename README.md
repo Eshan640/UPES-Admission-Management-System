@@ -34,24 +34,42 @@ I made this project to practice structs, arrays, functions and file handling in 
 
 UPES-Admission-Management-System/
 ├─ src/
-│ └─ main.c # main program
+│  ├─ main.c          # Entry point with menu
+│  ├─ admission.c     # Admission flow logic
+│  ├─ data.c          # Quiz data for all schools
+│  ├─ quiz.c          # Quiz execution
+│  └─ utils.c         # Input validation utilities
+├─ include/
+│  ├─ admission.h     # Admission function declarations
+│  ├─ data.h          # School and quiz structures
+│  ├─ quiz.h          # Quiz function declarations
+│  └─ utils.h         # Utility function declarations
 ├─ docs/
-│ └─ ProjectReport.pdf # project report (SRS, algos, flowchart)
-├─ sample/
-│ └─ sample_input.txt # sample inputs to test quickly
-├─ students.txt # created at runtime (stores passed students)
-├─ README.md # this file
-└─ LICENSE
+│  └─ ProjectReport.pdf # Complete project documentation
+├─ sample_input.txt   # Sample test inputs
+├─ students.txt       # Generated at runtime (stores records)
+├─ README.md          # This file
+
 
 ---
 
-## How to Run the Project
+## How to Compile and Run
 
-Step 1: Compile
-gcc -std=c11 -Wall src/main.c -o main
+### Compilation
+```bash
+gcc -std=c11 -Wall -Iinclude -o main src/main.c src/admission.c src/data.c src/quiz.c src/utils.c
+```
 
-Step 2: Run
+### Execution
+```bash
 ./main
+```
+
+### With Sample Input (for testing)
+```bash
+./main < sample_input.txt
+```
+```
 
 ---
 
