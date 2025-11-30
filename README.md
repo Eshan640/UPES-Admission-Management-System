@@ -55,7 +55,7 @@ Step 2: Run
 
 ---
 
-## 📌 Project Output (Screenshots)
+##  Project Output (Screenshots)
 
 Below are a few snapshots showing the working of the system:
 
@@ -74,7 +74,7 @@ Below are a few snapshots showing the working of the system:
 
 ---
 
-## 📘 What I Learned
+##  What I Learned
 
 While making this project, I practiced the following concepts:
 
@@ -91,7 +91,7 @@ This helped me understand how to build a small console-based system from scratch
 
 ---
 
-## 🚀 Future Improvements
+##  Future Improvements
 
 Some things I would like to add later:
 
@@ -106,7 +106,7 @@ Some things I would like to add later:
 
 ---
 
-## 📝 How to Contribute
+##  How to Contribute
 
 If you want to improve this project:
 
@@ -119,7 +119,7 @@ Suggestions are always welcome.
 
 ---
 
-## 💬 Contact
+##  Contact
 
 If you want to discuss this project or ask any doubts:
 
