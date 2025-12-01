@@ -4,7 +4,7 @@
 #include "../include/admission.h"
 #include <string.h>
 #include <ctype.h>
-
+#include <stdlib.h>
 void safe_get(char *buf, int size) {
     if (fgets(buf, size, stdin) == NULL) {
         buf[0] = '\0';
@@ -22,15 +22,36 @@ int valid_mobile(const char *s) {
 
 char ask_choice_simple(const char *valid) {
     char line[64];
+    int attempts = 0;
     while (1) {
         printf("Enter choice (%s): ", valid);
-        safe_get(line, sizeof(line));
-        if (line[0] == '\0') {
-            printf("Please enter a choice.\n");
+        fflush(stdout);  // Force output
+        
+        if (fgets(line, sizeof(line), stdin) == NULL) {
+            // EOF reached or error
+            if (attempts++ > 100) {
+                fprintf(stderr, "\nError: Too many invalid inputs\n");
+                exit(1);
+            }
             continue;
         }
-       char c = toupper((unsigned char)line[0]);
+        
+        // Remove newline
+        line[strcspn(line, "\n")] = '\0';
+        
+        if (line[0] == '\0') {
+            printf("Please enter a choice.\n");
+            if (attempts++ > 100) {
+                fprintf(stderr, "\nError: No valid input received\n");
+                exit(1);
+            }
+            continue;
+        }
+        
+        char c = toupper((unsigned char)line[0]);
         if (strchr(valid, c)) return c;
         printf("Invalid choice. Try again.\n");
     }
 }
+
+
